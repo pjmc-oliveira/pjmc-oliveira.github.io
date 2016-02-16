@@ -120,8 +120,12 @@ article table {
 	padding-left: 0px;
 }
 
+.full div > ul > li {
+	font-weight: bold;
+}
+
 .full div > ul > ul + li {
-	padding-top: 10px;
+	padding-top: 20px;
 }
 
 .full div > ul > li:before {
@@ -147,6 +151,10 @@ article table {
 
 .full h2 + a > i {
 	display: none;
+}
+
+.full li {
+	line-height: 150%;
 }
 
 .highlight:before {
