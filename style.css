@@ -1,0 +1,225 @@
+/*Desktop*/
+html, body {
+	margin: 0px;
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #ddd;
+}
+
+header {
+	background-color: #CC2631;
+	margin: 0px;
+	padding: 15px 0px;
+	color: white;
+	width: 100%;
+	position: fixed;
+}
+header h1 {
+	margin: 0px;
+	float: left;
+	height: 40px;
+}
+header div {
+	max-width: 800px;
+	margin: auto;
+	padding: 10px;
+}
+
+header ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	float: right;
+}
+
+header ul .more-info {
+	display: none;
+}
+
+header li {
+	display: inline;
+}
+
+header i {
+	border: 2px solid white;
+	border-radius: 10px;
+	padding: 0px 2px;
+}
+
+header a:link, header a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+header i:hover {
+	background-color: white;
+}
+
+header a i:hover {
+	background-color: white;
+	color: #CC2631;
+}
+
+article {
+	max-width: 800px;
+	margin: auto;
+	padding-top: 85px;
+	margin-bottom: 15px;
+}
+
+article a:link, article a:visited{
+	color: black;
+	text-decoration: none;
+	background-color: #CC2631;
+	color: white;
+	padding: 2px;
+}
+
+article a:hover {
+	background-color: black;
+}
+
+article table {
+	width: 100%;
+}
+
+.full h2 {
+	margin: 0px;
+	float: left;
+}
+.full {
+	width: 100%;
+	margin: 0px;
+	display: inline-block;
+	background-color: white;
+	margin-top: 15px;
+}
+
+.full > div {
+	padding: 10px;
+}
+
+.row > div {
+	margin: 0px;
+	width: 50%;
+	display: inline-block;
+}
+
+.row > div:nth-of-type(odd) {
+	float: left;
+}
+
+.row > div:nth-of-type(even) {
+	float: left;
+}
+
+.full ul {
+	list-style: none;
+}
+
+.full div > ul {
+	padding-left: 0px;
+}
+
+.full div > ul > ul + li {
+	padding-top: 10px;
+}
+
+.full div > ul > li:before {
+	content: "★";
+	padding-right: 7px;
+}
+
+.full li:before {
+	content: "•";
+	padding-right: 7px;
+}
+
+.full i {
+	float: right;
+	padding: 5px;
+	padding-right: 10px;
+}
+
+.full h2 + a {
+	background-color: white;
+	color: black;
+}
+
+.full h2 + a > i {
+	display: none;
+}
+
+.highlight:before {
+	color: #CC2631;
+}
+
+#Skills p {
+	text-align: center;
+}
+
+#Skills p > span + span::before {
+	content: ", "
+}
+
+/*Tablet*/
+@media (max-width: 800px) {
+	header {
+		position: static;
+		overflow: hidden;
+	}
+	article {
+		padding-top: 0px;
+	}
+	.full h2 + a > i {
+		display: block;
+	}
+}
+
+/*Very Big Phone*/
+@media (max-width: 550px) {
+	article {
+		margin-bottom: 0px;
+		background-color: white;
+	}
+	.row > div {
+		width: 100%;
+	}
+	.full {
+		margin-top: 0px;
+	}
+	#Skills p > span + span::before {
+		content: "";
+	}
+	#Skills p > span {
+		display: block;
+		margin: auto;
+	}
+}
+
+/*Big Phone*/
+@media (max-width: 450px) {
+	table, thead, tbody, th, td, tr {
+		display: block;
+	}
+	td {
+		border: 0px;
+		padding: 0px;
+		width: 25%;
+		float: left;
+	}
+	ul > ul {
+		padding-left: 20px;
+	}
+	#Skills p {
+		clear: both;
+	}
+}
+
+@media (max-width: 360px) {
+	header ul .links {
+		display: none;
+	}
+	header ul .more-info {
+		display: inline;
+	}
+}
